@@ -4,8 +4,9 @@
   "description": "A simple Agar.io clone",
   "main": "server/server.js",
   "scripts": {
-    "postinstall": "gulp build",
-    "start": "gulp run",
+    "xpostinstall": "gulp build",
+    "start": "node src/server/server.js",
+    "gstart": "gulp run",
     "watch": "gulp watch",
     "test": "gulp test"
   },
@@ -42,7 +43,7 @@
     "babel-core": "^5.6.15",
     "babel-loader": "^5.3.0",
     "chai": "^3.0.0",
-    "gulp": "^3.8.11",
+    "gulp": "^4.0.2",
     "gulp-babel": "^5.1.0",
     "gulp-jshint": "^1.11.0",
     "gulp-mocha": "^2.1.2",
@@ -55,5 +56,8 @@
     "nodemon": "^1.2.1",
     "webpack": "^1.10.1",
     "webpack-stream": "^2.0.0"
+  },
+  "resolutions": {
+    "graceful-fs": "^4.2.4"
   }
 }

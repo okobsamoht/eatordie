@@ -1,11 +1,11 @@
-var io = require('socket.io-client');
+//var io = require('socket.io-client');
 
 var playerName;
 var playerNameInput = document.getElementById('playerNameInput');
 var socket;
 var reason;
 var KEY_ENTER = 13;
-var borderDraw = false;
+var borderDraw = true;
 var animLoopHandle;
 var spin = -Math.PI;
 var enemySpin = -Math.PI;
@@ -95,7 +95,7 @@ var kicked = false;
 // TODO break out into GameControls
 var continuity = false;
 var startPingTime = 0;
-var toggleMassState = 0;
+var toggleMassState = 1;
 var backgroundColor = '#f2fbff';
 
 var foodConfig = {
@@ -696,7 +696,7 @@ window.requestAnimFrame = (function() {
             window.mozRequestAnimationFrame    ||
             window.msRequestAnimationFrame     ||
             function( callback ) {
-                window.setTimeout(callback, 1000 / 60);
+                window.setTimeout(callback, 1000 / 50);
             };
 })();
 
