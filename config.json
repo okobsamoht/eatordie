@@ -9,8 +9,8 @@
     "maxFood": 1000,
     "slowBase": 4.5,
     "logChat": 0,
-    "networkUpdateFactor": 40,
-    "maxHeartbeatInterval": 5000,
+    "networkUpdateFactor": 10000,
+    "maxHeartbeatInterval": 500,
     "foodUniformDisposition": true,
     "newPlayerInitialPosition": "farthest",
     "massLossRate": 10
